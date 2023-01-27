@@ -8,7 +8,7 @@ import maya.cmds as cmds
 windowName = 'myWindow'
 if cmds.window(windowName, exists=True):
     cmds.deleteUI(windowName)
-cmds.window(windowName, width=windowWidth, title='b-CG tx2mat')
+cmds.window(windowName, width=240, title='b-CG tx2mat')
 cmds.columnLayout(adj=True)
 cmds.text( label='Enjoy! :)', height = 15  )
 cmds.separator(height = 10, style='in')
