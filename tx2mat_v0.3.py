@@ -27,7 +27,7 @@ def on_button_clicked(*args):
                 file_name = file_path.split("\\")[-1]
             else:
                 file_name = file_path.split("/")[-1]
-                texture_name = file_name.split(".")[0]
+            texture_name = file_name.split(".")[0]
             try:
                 if not cmds.textField(textfield, query=True, enable=True):
                     cmds.rename(material,texture_name)
